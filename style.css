@@ -43,14 +43,14 @@ UL {
 
 li a {
     display: block;
-    color: #fff;
+    color: powderblue;
     text-decoration: none;
     font-size: 1.5rem; 
 }
 
 #name {
     color: var(--blue-text);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ li a {
 
 .container{
     position: relative;
-    height: 100vh;
+    height: 210vh;
     width: 100%;
     overflow: hidden;
 }
@@ -70,7 +70,7 @@ li a {
     background-position: center;
     height: 100%;
     width: 100%;
-    margin-top: 0vh;
+    margin-top: 10vh;
     animation: scale 15s;
 }
 
@@ -101,7 +101,7 @@ li a {
     position: absolute;
     top: 35%;
     left: 10%;
-    font-size: 20px;
+    font-size: 15px;
     color: #fff;
     text-transform: uppercase;
     z-index: 2;
@@ -138,17 +138,20 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20PX;
+    margin: 20PX 0;
 }
 
 .projects {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-flow: wrap; 
-}
-
-.game-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project,
+  .game-project,
+  .space-project,
+  .instaclone-project {
     width: 400px;
     height: 400px;
     background: #fff;
@@ -156,38 +159,22 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .game-project {
     background-image: url(images/game.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.space-project {
-    width: 400px;
-    height: 400px;
-    background: #fff;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
+  }
+  
+  .space-project {
     background-image: url(images/space.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.instaclone-project {
-    width: 400px;
-    height: 400px;
-    background: #fff;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
+  }
+  
+  .instaclone-project {
     background-image: url(images/instaclone.jpeg);
-    background-size: cover;
-    background-position: center;
-}
+  }
+  
 
 .text-container {
     position: absolute;
@@ -201,7 +188,7 @@ li a {
 }
 
 .text-container:hover {
-    height: 250px;
+    height: 300px;
 }
 
 .name {
@@ -212,7 +199,7 @@ li a {
 
 .content {
     padding: 35px 0;
-    color: var(--mid-blue);
+    color: var(--dark-blue);
 }
 
 .button {
@@ -261,7 +248,7 @@ li a {
     justify-content: space-between;
     font-size: 2rem;
     width: 30%;
-    margin: 25% 35%;
+    margin: 0px auto;
     padding: 30px;
 }
 
@@ -284,7 +271,7 @@ li a {
     ul {
       background-color: rgba(0, 0, 0, 0.625);  
     }
-    .game-project {
+    .project {
         width: 250px;
         height: 400px;
         background: #fff;
@@ -292,39 +279,27 @@ li a {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         margin: 50px;
-        background-image: url(images/game.jpeg);
+    }
+    
+    .game-project {
+        background-image: URL(images/game.jpeg);
         background-size: cover;
         background-position: center;
     }
     
     
     .space-project {
-        width: 250px;
-        height: 400px;
-        background: #fff;
-        position: relative;
-        box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        margin: 50px;
-        background-image: url(images/space.jpeg);
+        background-image: URL(images/space.jpeg);
         background-size: cover;
         background-position: center;
     }
     
     
     .instaclone-project {
-        width: 250px;
-        height: 400px;
-        background: #fff;
-        position: relative;
-        box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        margin: 50px;
         background-image: url(images/instaclone.jpeg);
         background-size: cover;
         background-position: center;
     }
-
     .about-container {
        display: flex;
        align-items: center;
